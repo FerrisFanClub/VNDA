@@ -1,6 +1,16 @@
 [package]
 name = "vnda"
-version = "0.1.0"
-edition = "2024"
+description = "Library to handle visual novels, synchronized with a PostgreSQL database."
+keywords = ["lib", "visual novel", "database", "postgresql"]
+categories = ["database"]
+authors.workspace = true
+edition.workspace = true
+version.workspace = true
+readme.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+publish.workspace = true
+resolver = "3"
 
 [dependencies]

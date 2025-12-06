@@ -1,3 +1,69 @@
 [workspace]
 resolver = "3"
-members = ["server","vnda"]
+members = ["server", "vnda"]
+
+[workspace.package]
+authors = ["0hDEADBEAF", "Eldenhell"]
+edition = "2024"
+homepage = "https://github.com/FerrisFanClub/VNDA"
+keywords = [
+    "visual novel",
+    "discord",
+    "activity",
+    "game",
+    "server",
+    "postgresql",
+    "library",
+]
+license = "AGPL-3.0"
+publish = false
+readme = "README.md"
+repository = "https://github.com/FerrisFanClub/VNDA"
+version = "0.0.1"
+
+
+[profile.dev]
+opt-level = 0
+debug = "full"
+strip = "none"
+debug-assertions = true
+overflow-checks = true
+lto = "off"
+panic = "unwind"
+incremental = true
+codegen-units = 256
+rpath = false
+
+[profile.release]
+opt-level = 3
+debug = "none"
+strip = "none"
+debug-assertions = false
+overflow-checks = false
+lto = "fat"
+panic = "abort"
+incremental = false
+codegen-units = 0
+rpath = false
+
+[profile.bench]
+opt-level = 3
+debug = "none"
+strip = "none"
+debug-assertions = false
+overflow-checks = false
+lto = "fat"
+incremental = false
+codegen-units = 0
+rpath = false
+
+[profile.test]
+opt-level = 0
+debug = "none"
+strip = "none"
+debug-assertions = true
+overflow-checks = true
+lto = "off"
+incremental = false
+codegen-units = 16
+rpath = false
