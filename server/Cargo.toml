@@ -1,0 +1,16 @@
+[package]
+name = "server"
+description = "HTTP REST server used as the interface for Discord activity and vnda library"
+keywords = ["server", "REST"]
+categories = ["web-programming::http-server"]
+authors.workspace = true
+edition.workspace = true
+version.workspace = true
+readme.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+publish.workspace = true
+resolver = "3"
+
+[dependencies]
